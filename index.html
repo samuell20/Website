@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my webpage!</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+    <script defer type="module" src="./js/index.js"></script>  
+    <script defer src="./js/particles.min.js"></script> 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => 
+        {particlesJS.load('particles-js', './assets/particles.json', () => console.log('particles.js loaded!'));});
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="particles-js"></div> 
+    <div id="mask"></div>
+    <div id="context-menu" class="context-menu">
+        <a id="close-button" href="#"><i class="fs-1 bi bi-x"></i></a> 
+        <a class="fs-2 second-font-w300" href="#">> About me</a>
+        <a class="fs-2 second-font-w300" href="#">> My projects</a>
+        <a class="fs-2 second-font-w300" href="#">> My socials</a>
+    </div>
+    <header>
+        <div class="logo">
+            <p class="second-font-w300 fs-3">Samuel Rodríguez</p>
+        </div>
+
+        <nav>  
+            <div class="dropdown">
+                <a id="dropdown-menu" href="#"><i class="bi bi-list fs-1"></i></a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a class="second-font-w300 fs-3" href="#">Home</a></li>
+                    <li><a class="second-font-w300 fs-3" href="#">Projects</a></li>
+                    <li><a class="second-font-w300 fs-3" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <main>
+        <div class="title">
+            <h1 class="principal-font-w400 fs-test title-anim">Welcome to my portfolio!</h1>
+        </div>
+        <section class="about-me">
+            <img src="./assets/person.jpeg" alt="Person silhouette">
+            <div>
+                <p class="second-font-w300 fs-3">I am a junior developer who likes programming web applications.</p>
+            </div> 
+        </section> 
+        <section class="projects">
+            <h2 class="second-font-w300 fs-2">About me</h2>
+            <p>
+                I would define myself as a self-taught individual who is eager to learn new things. 
+            </p>
+        </section>
+        <section class="projects">
+            <h2 class="second-font-w300 fs-2">What i know</h2>
+            <div class="languages">
+                <p>Java</p>
+                <p>Golang</p>
+                <p>.Net</p>
+                <p>PHP</p>
+                <p>Javascript</p>
+                <p>Typescript</p>
+            </div>
+            <div class="">
+                <h3>BBDD</h3>
+                <div>Oracle DB PLSQL</div>
+                <div>Mysql</div>
+                <div>MongoDB</div>
+            </div>
+            <div class="">
+                <h3>Backend</h3>
+                <div>Linux</div>
+                <div>Git</div>
+            </div> 
+            <div class="">
+                <h3>Frontend</h3>
+                <div>React/React-native</div>
+                <div></div>
+            </div>
+        </section>
+        <section class="socials">
+            <h2 class="second-font-w300 fs-2">My socials</h2>
+            <p>You can contact me on the following socials</p>
+            <div>E-mail</div>
+            <div>Github</div>
+            <div>Telephone</div> 
+        </section>
+    </main>
+</body>
+</html>
